@@ -20,7 +20,41 @@ html {
   img {
     width: 100%;
   }
+
+  article {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid lightgray;
+  padding-bottom: 2rem;
+  }
 /*Making the title of each blog post larger*/
   article h2 {
     font-size: 1.5rem;
+  }
+/*Styling the first letter of the first paragraph for each blog post*/
+
+article p:first-of-type::first-letter {
+    color: lightgray;
+    font-size: 2rem;
+    float: left;
+    margin-right: 0.5rem;
+  }
+/*Styling site navigation in header and footer*/
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-nav a {
+    color: tomato;
   }
